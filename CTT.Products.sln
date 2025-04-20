@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTT.Products.API", "CTT.Products.API\CTT.Products.API.csproj", "{BABB6391-1557-4A76-B06D-5209D6977130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTT.Products.Domain", "CTT.Products.Domain\CTT.Products.Domain.csproj", "{5E8540F8-05A6-4154-8BF7-56825CBBD1CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTT.Products.Tests", "CTT.Products.Tests\CTT.Products.Tests.csproj", "{C60FB170-BF3A-4C34-AF57-02759A41031B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{BABB6391-1557-4A76-B06D-5209D6977130}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BABB6391-1557-4A76-B06D-5209D6977130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BABB6391-1557-4A76-B06D-5209D6977130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8540F8-05A6-4154-8BF7-56825CBBD1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8540F8-05A6-4154-8BF7-56825CBBD1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8540F8-05A6-4154-8BF7-56825CBBD1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8540F8-05A6-4154-8BF7-56825CBBD1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60FB170-BF3A-4C34-AF57-02759A41031B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60FB170-BF3A-4C34-AF57-02759A41031B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60FB170-BF3A-4C34-AF57-02759A41031B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60FB170-BF3A-4C34-AF57-02759A41031B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
