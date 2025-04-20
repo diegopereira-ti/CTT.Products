@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CTT.Products.Domain\CTT.Products.Domain.csproj" />
+    <ProjectReference Include="..\CTT.Products.Infrastructure\CTT.Products.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
