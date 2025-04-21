@@ -1,0 +1,32 @@
+# Project Instructions  
+
+## Prerequisites  
+- Ensure you have .NET 9 SDK installed.  
+- Install MongoDB or have access to a MongoDB instance.  
+
+## Steps to Run the Project  
+
+1. **Build the Solution**  
+   - Open the project in Visual Studio.  
+   - Go to the menu and select `Build > Build Solution` or press `Ctrl+Shift+B`.  
+
+2. **Set Up MongoDB**  
+   - If MongoDB is not already running, start a MongoDB instance.  
+   - Create a database named `mongo`.  
+
+3. **Configure Environment Variables**  
+   - Set the following environment variables:  
+     - `MongoDb__DatabaseName=mongo`  
+     - `MongoDb__ConnectionString=mongodb://mongo:mongo@mongo:27017`  
+   - On Windows:  
+     - Open Command Prompt and run:
+- On macOS/Linux:  
+  - Open a terminal and run:
+4. **Run the Project**  
+   - In Visual Studio, press `F5` to start the project.  
+
+## Notes  
+- Ensure MongoDB is accessible at the specified connection string.  
+- If using Docker, ensure the MongoDB container is running and properly configured.
+
+- This version includes the ci/cd configuration files and its integrated with github actions. I was able to run some tests, despite some issues that I could not address in time.
