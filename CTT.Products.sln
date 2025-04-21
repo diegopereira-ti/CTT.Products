@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTT.Products.Tests", "CTT.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTT.Products.Infrastructure", "CTT.Products.Infrastructure\CTT.Products.Infrastructure.csproj", "{378FB14F-34B5-4324-A634-268BAB90CE79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTT.Products.Business", "CTT.Products.Business\CTT.Products.Business.csproj", "{CC013FC8-1676-4B3F-A555-F928357EDC34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{378FB14F-34B5-4324-A634-268BAB90CE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{378FB14F-34B5-4324-A634-268BAB90CE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{378FB14F-34B5-4324-A634-268BAB90CE79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC013FC8-1676-4B3F-A555-F928357EDC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC013FC8-1676-4B3F-A555-F928357EDC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC013FC8-1676-4B3F-A555-F928357EDC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC013FC8-1676-4B3F-A555-F928357EDC34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
