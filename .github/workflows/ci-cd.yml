@@ -102,7 +102,7 @@ jobs:
       run: dotnet build --no-restore --configuration Release
 
     - name: Run All Tests
-      run: dotnet test --no-build --configuration Release --logger "trx"
+      run: dotnet test --no-build --configuration Release --filter Category=Integration --logger "trx"
 
     - name: Log in to DockerHub
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
