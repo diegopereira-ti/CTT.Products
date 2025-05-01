@@ -43,6 +43,9 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 3
+        env:
+          MONGO_INITDB_ROOT_USERNAME: mongo
+          MONGO_INITDB_ROOT_PASSWORD: mongo
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -54,6 +57,9 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
+    
+    - name: Wait for MongoDB to be ready
+      run: sleep 15
 
     - name: Run Integration Tests
       env:
