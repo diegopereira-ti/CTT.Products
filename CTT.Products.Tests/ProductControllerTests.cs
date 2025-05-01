@@ -56,10 +56,10 @@ public class ProductControllerTests
     public async Task RegisterProduct_InvalidRequest_ReturnsBadRequest()
     {
         // Arrange  
-        RegisterProductRequest productRequest = null;
+        RegisterProductRequest? productRequest = null;
 
         // Act  
-        var result = await _controller.RegisterProduct(productRequest);
+        var result = await _controller.RegisterProduct(productRequest!);
 
         // Assert  
         var badRequestResult = Assert.IsType<BadRequestObjectResult>(result);
@@ -95,17 +95,17 @@ public class ProductControllerTests
     [Fact]
     public async Task GetProductById_ProductDoesNotExist_ReturnsNotFound()
     {
-        // Arrange  
+        // Arrange    
         var productId = Guid.NewGuid();
 
         _mockProductService
             .Setup(service => service.GetProductByIdAsync(productId))
-            .ReturnsAsync((Product)null);
+            .ReturnsAsync((Product?)null);
 
-        // Act  
+        // Act    
         var result = await _controller.GetProductById(productId);
 
-        // Assert  
+        // Assert    
         var notFoundResult = Assert.IsType<NotFoundObjectResult>(result);
         Assert.Equal("Product not found.", notFoundResult.Value);
     }
