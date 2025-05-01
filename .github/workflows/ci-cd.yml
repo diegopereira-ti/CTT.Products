@@ -35,7 +35,7 @@ jobs:
     needs: build-and-unit-tests
     services:
       mongo:
-        image: mongo:6.0
+        image: mongo:5.0
         ports:
           - 27017:27017
         options: >-
