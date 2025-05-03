@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cttproducts-api
+  labels:
+    app: cttproducts-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cttproducts-api
+  template:
+    metadata:
+      labels:
+        app: cttproducts-api
+    spec:
+      containers:
+      - name: cttproducts-api
+        image: diegopereirati/cttproducts-api:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: MONGO__CONNECTION
+          value: "mongodb://mongo:27017"
