@@ -118,7 +118,7 @@ jobs:
              git config --global user.email "github-actions@github.com"  
              git config --global user.name "GitHub Actions"  
              git clone https://${{ secrets.MANIFEST_REPO_TOKEN }}@${{ secrets.MANIFEST_REPO_URL }} manifest-repo  
-             cp -r k8s/* manifest-repo/  
+             cp -r /k8s/* manifest-repo/  
              cd manifest-repo  
              git checkout -b update-k8s-manifests  
              git add .  
