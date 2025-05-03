@@ -140,12 +140,12 @@ jobs:
     - name: Create PR in manifest repo
       uses: repo-sync/pull-request@v2
       with:
-        token: ${{ secrets.MANIFEST_REPO_TOKEN }}
-        repository: https://${{ secrets.MANIFEST_REPO_URL }}
-        title: "Update K8s manifests from CI"
-        body: "This PR updates the Kubernetes manifests."
-        base: main
-        head: update-manifests-${{ github.run_id }}
-        destination: main
+        github_token: ${{ secrets.MANIFEST_REPO_TOKEN }}
+        destination_repository: https://${{ secrets.MANIFEST_REPO }}
+        pr_title: "Update K8s manifests from CI"
+        pr_body: "This PR updates the Kubernetes manifests."
+        destination_branch: main
+        source_branch: update-manifests-${{ github.run_id }}
+        pr_reviewer: diegopereira-ti
         
         
