@@ -141,7 +141,7 @@ jobs:
       uses: repo-sync/pull-request@v2
       with:
         github_token: ${{ secrets.MANIFEST_REPO_TOKEN }}
-        destination_repository: https://${{ secrets.MANIFEST_REPO_URL }}
+        destination_repository: https://${{ secrets.MANIFEST_REPO }}
         pr_title: "Update K8s manifests from CI"
         pr_body: "This PR updates the Kubernetes manifests."
         destination_branch: main
