@@ -138,7 +138,7 @@ jobs:
     #     repository: https://${{ secrets.MANIFEST_REPO_URL }}
 
     - name: Create PR in manifest repo
-      uses: repo-sync/create-pull-request@v6
+      uses: repo-sync/pull-request@v2
       with:
         token: ${{ secrets.MANIFEST_REPO_TOKEN }}
         repository: https://${{ secrets.MANIFEST_REPO_URL }}
