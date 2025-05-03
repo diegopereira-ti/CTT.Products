@@ -15,6 +15,7 @@ public class ProductRepositoryTests
     }
 
     [Fact]
+    [Trait("Category", "Integration")]
     public async Task GetProductByIdAsync_ShouldReturnProduct_WhenProductExists()
     {
         // Arrange  
@@ -38,6 +39,7 @@ public class ProductRepositoryTests
     }
 
     [Fact]
+    [Trait("Category", "Integration")]
     public async Task GetProductsAsync_ShouldReturnAllProducts()
     {
         // Arrange  
@@ -69,6 +71,7 @@ public class ProductRepositoryTests
     }
 
     [Fact]
+    [Trait("Category", "Integration")]
     public async Task AddProductAsync_ShouldAddProduct()
     {
         // Arrange  
@@ -91,6 +94,7 @@ public class ProductRepositoryTests
     }
 
     [Fact]
+    [Trait("Category", "Integration")]
     public async Task UpdateProductAsync_ShouldUpdateProduct()
     {
         // Arrange  
@@ -118,6 +122,7 @@ public class ProductRepositoryTests
     }
 
     [Fact]
+    [Trait("Category", "Integration")]
     public async Task DeleteProductAsync_ShouldRemoveProduct()
     {
         // Arrange  
