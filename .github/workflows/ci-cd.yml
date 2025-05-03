@@ -126,6 +126,9 @@ jobs:
              git push origin update-k8s-manifests
       env:
         GIT_TERMINAL_PROMPT: 0
+    
+    - name: Wait for Clone deployment to be ready
+      run: sleep 30
 
     - name: Create PR in manifest repo
       uses: repo-sync/pull-request@v2
