@@ -146,5 +146,6 @@ jobs:
         body: "This PR updates the Kubernetes manifests."
         base: main
         head: update-manifests-${{ github.run_id }}
+        destination: main
         
         
